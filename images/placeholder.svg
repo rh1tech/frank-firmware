@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Firmware screenshot placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef0f3" />
+      <stop offset="1" stop-color="#dfe2e7" />
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#cdd1d8" />
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)" />
+  <rect width="800" height="600" fill="url(#dots)" opacity="0.5" />
+  <g transform="translate(400 300)" fill="#9aa1ad" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" text-anchor="middle">
+    <circle cx="0" cy="-26" r="22" fill="none" stroke="#9aa1ad" stroke-width="3" />
+    <path d="M-7 -32 l8 8 l16 -16" fill="none" stroke="#9aa1ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <text y="32" font-size="16" letter-spacing="3" font-weight="600">SCREENSHOT</text>
+    <text y="56" font-size="13" letter-spacing="2" fill="#b3b8c2">COMING SOON</text>
+  </g>
+</svg>

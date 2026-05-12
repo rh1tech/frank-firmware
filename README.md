@@ -1,5 +1,7 @@
 # frank-firmware
 
+Official page: **[frank.rh1.tech](https://frank.rh1.tech/)** — hub for all FRANK boards and firmware.
+
 Single source of truth for FRANK firmware metadata and screenshots, consumed by
 [rh1.tech](https://github.com/rh1tech/rh1.tech) and other public-facing sites.
 

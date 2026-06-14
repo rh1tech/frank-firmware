@@ -40,6 +40,7 @@ export const FIRMWARE_ORDER: string[] = [
   'frank-snes',
   'frank-genesis',
   'frank-msx',
+  'frank-cpc',
   'frank-c64',
   'frank-apple',
   // PC
@@ -373,6 +374,45 @@ export const FIRMWARE: Record<string, Firmware> = {
       'images/frank-msx/screenshot3.png',
       'images/frank-msx/screenshot4.png',
       'images/frank-msx/screenshot5.png',
+    ],
+  },
+  'frank-cpc': {
+    slug: 'frank-cpc',
+    name: 'frank-cpc',
+    category: 'console',
+    excerptEn: 'Amstrad CPC 464/664/6128 emulator for FRANK (Caprice32 core).',
+    excerptRu: 'Эмулятор Amstrad CPC 464/664/6128 для FRANK (ядро Caprice32).',
+    summaryEn:
+      'A Caprice32-based Amstrad CPC emulator for RP2350. Supports CPC 464/664/6128, SD-card loading for .DSK/.IPF/.CDT/.CPR media, HDMI/VGA/composite output, and configurable HDMI/I2S/PWM audio paths.',
+    summaryRu:
+      'Эмулятор Amstrad CPC на базе Caprice32 для RP2350. Поддерживает CPC 464/664/6128, загрузку .DSK/.IPF/.CDT/.CPR с SD-карты, вывод HDMI/VGA/композит и настраиваемые аудиовыходы HDMI/I2S/PWM.',
+    highlightsEn: [
+      'CPC 464, CPC 664, and CPC 6128 models with switchable RAM profiles.',
+      'Disk, tape, and cartridge loading: .DSK, .IPF, .CDT/.CAS, .CPR.',
+      'HDMI (PIO), VGA via HSTX (M2), and software composite PAL/NTSC video.',
+      'PS/2 keyboard, NES/SNES pads, and optional USB HID/XInput input stack.',
+      '8 MB PSRAM-backed runtime with SD browser and persistent settings.',
+    ],
+    highlightsRu: [
+      'Модели CPC 464, CPC 664 и CPC 6128 с переключаемыми профилями памяти.',
+      'Загрузка дисков, кассет и картриджей: .DSK, .IPF, .CDT/.CAS, .CPR.',
+      'Видеовыход HDMI (PIO), VGA через HSTX (M2) и программный композит PAL/NTSC.',
+      'Поддержка PS/2-клавиатуры, NES/SNES-геймпадов и опционального USB HID/XInput.',
+      'Работа с 8 МБ PSRAM, SD-браузером и сохранением настроек.',
+    ],
+    videoOutputs: ['HDMI', 'VGA', 'Composite'],
+    audio: ['PWM', 'I2S'],
+    psram: 'required',
+    compatibility: ['M1', 'M2'],
+    repository: 'https://github.com/rh1tech/frank-cpc',
+    releases: 'https://github.com/rh1tech/frank-cpc/releases',
+    thumbnail: 'images/frank-cpc/screenshot1.jpg',
+    screenshots: [
+      'images/frank-cpc/screenshot1.jpg',
+      'images/frank-cpc/screenshot2.jpg',
+      'images/frank-cpc/screenshot3.jpg',
+      'images/frank-cpc/screenshot4.jpg',
+      'images/frank-cpc/screenshot5.jpg',
     ],
   },
   'frank-c64': {

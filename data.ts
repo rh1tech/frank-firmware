@@ -41,6 +41,7 @@ export const FIRMWARE_ORDER: string[] = [
   'frank-genesis',
   'frank-msx',
   'frank-cpc',
+  'frank-micro',
   'frank-c64',
   'frank-apple',
   // PC
@@ -413,6 +414,44 @@ export const FIRMWARE: Record<string, Firmware> = {
       'images/frank-cpc/screenshot3.jpg',
       'images/frank-cpc/screenshot4.jpg',
       'images/frank-cpc/screenshot5.jpg',
+    ],
+  },
+  'frank-micro': {
+    slug: 'frank-micro',
+    name: 'frank-micro',
+    category: 'console',
+    excerptEn: 'BBC Micro (Model B / Master 128) emulator for FRANK.',
+    excerptRu: 'Эмулятор BBC Micro (Model B / Master 128) для FRANK.',
+    summaryEn:
+      'A B-em-based BBC Micro emulator for RP2350. Supports Model B and Master 128 with SD-card disk browser, HDMI video with embedded audio support, and PS/2, NES/SNES, or optional USB HID input.',
+    summaryRu:
+      'Эмулятор BBC Micro на базе B-em для RP2350. Поддерживает Model B и Master 128, SD-браузер дисков, HDMI-видео с поддержкой встроенного звука и ввод с PS/2, NES/SNES и опционального USB HID.',
+    highlightsEn: [
+      'BBC Model B and Master 128 emulation with switchable machine profile.',
+      'Disc image loading: .SSD, .DSD, .ADF, .ADL, .IMG from SD card.',
+      'HDMI 640×480 output; audio backends switchable between HDMI, I2S, and PWM.',
+      'PS/2 keyboard, NES/SNES pads, and optional USB HID/XInput support.',
+      'No PSRAM required; runs on stock RP2350 internal SRAM.',
+    ],
+    highlightsRu: [
+      'Эмуляция BBC Model B и Master 128 с переключаемым профилем машины.',
+      'Загрузка дисковых образов .SSD, .DSD, .ADF, .ADL, .IMG с SD-карты.',
+      'Вывод HDMI 640×480; аудиовыход переключается между HDMI, I2S и PWM.',
+      'Поддержка PS/2-клавиатуры, NES/SNES-геймпадов и опционального USB HID/XInput.',
+      'PSRAM не требуется; работает на встроенной SRAM RP2350.',
+    ],
+    videoOutputs: ['HDMI'],
+    audio: ['PWM', 'I2S'],
+    psram: 'none',
+    compatibility: ['M1', 'M2'],
+    repository: 'https://github.com/rh1tech/frank-micro',
+    releases: 'https://github.com/rh1tech/frank-micro/releases',
+    thumbnail: 'images/frank-micro/screen_1.jpg',
+    screenshots: [
+      'images/frank-micro/screen_1.jpg',
+      'images/frank-micro/screen_2.jpg',
+      'images/frank-micro/screen_3.jpg',
+      'images/frank-micro/screen_4.jpg',
     ],
   },
   'frank-c64': {
